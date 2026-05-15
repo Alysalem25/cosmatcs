@@ -10,6 +10,7 @@ import { Story } from "@/components/sections/Story";
 import { Features } from "@/components/sections/Features";
 import { Collection } from "@/components/sections/Collection";
 import { Footer } from "@/components/sections/Footer";
+import SplineScene from "@/components/SplineScene";
 
 export default function Home() {
   const scrollProgress = useScrollProgress();
@@ -41,8 +42,8 @@ export default function Home() {
         ref={sceneContainerRef}
         className="absolute top-0 left-0 w-full h-[100vh] pointer-events-none z-0"
       >
-        <Scene scrollProgress={scrollProgress} />
-      </div>
+          <SplineScene />
+        </div>
 
       {/* Sections overlaying the 3D scene */}
       <Hero />
